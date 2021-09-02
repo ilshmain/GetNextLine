@@ -5,11 +5,9 @@
 
 ## Как это запустить?
 
-Чтобы протестировать функцию, скомпилируйте с main.c.
-gcc main.c src/get_next_line.c
-./a.out tests/some_lines.txt
-Если вы хотите протестировать с несколькими файловыми дескрипторами, скомпилируйте с main-multiple-fds.c
-gcc main-multiple-fds.c src/get_next_line.c.
-./a.out tests/some_lines.txt tests/nl_and_eof_one.txt
+Чтобы протестировать функцию, скомпилируйте с main.c.     
+gcc get_next_line.c get_next_line_utils.c main.c && ./a.out     
+Если вы хотите протестировать с несколькими файловыми дескрипторами, скомпилируйте с    
+gcc get_next_line_bonus.c  get_next_line_utils_bonus.c  main.c && ./a.out     
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
